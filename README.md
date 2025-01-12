@@ -3,6 +3,10 @@
 ## **Overview**
 This project is a front-end style guide inspired by "Winnie the Pooh"-themed colors. It is built using **Pug** (HTML preprocessor) and **Sass** (CSS preprocessor) to demonstrate clean and reusable code practices.
 
+![Project Screenshot1](screenshots/Project2_Screenshot1.png)
+![Project Screenshot2](screenshots/Project2_Screenshot2.png)
+![Project Screenshot3](screenshots/Project2_Screenshot3.png)
+
 **Live Demo:** [View on CodePen](https://codepen.io/WinnyChang-Yun/pen/gbYeKjb)
 
 ## **Tech Stack**
