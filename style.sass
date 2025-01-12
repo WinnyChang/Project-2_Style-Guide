@@ -1,0 +1,138 @@
+$color_yellow: #ffd966
+$color_red: #bd2628
+$color_white: #fcfcfa
+$color_brown: #5b3005
+$background-yellow: #f5eeda
+
+$font_base_size: 10px
+
+$max_content_width: 768px
+
+*
+    // border: solid 1px lightgray
+    position: relative
+    font-family: Hannotate TC, Microsoft Sans Serif
+
+@mixin size($w, $h)
+    width: $w
+    height: $h
+
+html, body
+    padding: 0px
+    margin: 0px
+
+.maxwidth
+    max-width: $max_content_width
+    margin-left: auto
+    margin-right: auto
+
+.header
+    height: 320px
+    background-color: $background-yellow
+    & .icon
+        width: 240px
+        position: absolute
+        left: 50%
+        top: 42%
+        transform: translateX(-50%) translateY(-50%)
+    & a
+        color: $color_brown
+        font-size: $font_base_size * 1.2
+        position: absolute
+        left: 50%
+        top: 86%
+        transform: translateX(-50%) translateY(-50%)
+
+.content
+    padding: 50px
+    color: $color_brown
+    & h4
+        margin-top: 10px
+        font-size: $font_base_size * 2.4
+    & hr
+        margin: 32px 0px 24px
+    & h5
+        margin: 10px 0px
+        font-size: $font_base_size * 1.8
+    
+    & h1
+        font-size: $font_base_size * 4
+    & h1.en
+        font-size: $font_base_size * 2.4
+    & .h1_hr
+        border: solid 3px $color_red
+        width: 120px
+    & h2
+        font-size: $font_base_size * 3
+    & h2.en
+        font-size: $font_base_size * 1.8
+    & h3
+        font-size: $font_base_size * 2
+    & h3.en
+        font-size: $font_base_size * 1.2
+    & .en
+        letter-spacing: 0.5px
+        margin-top: -15px
+
+    & .color
+        display: inline-block
+        margin: 10px 30px 0px 0px
+        & .color_sample, & .color_hex
+            display: inline-block
+            vertical-align: middle
+        & .color_sample
+            +size(30px, 30px)
+            border: solid 2px
+            margin-right: 15px
+        & .color_hex
+            width: 80px
+        & .color_sample_yellow
+            background-color: $color_yellow
+        & .color_sample_red
+            background-color: $color_red
+        & .color_sample_white
+            background-color: $color_white
+        & .color_sample_brown
+            background-color: $color_brown
+
+    & .button
+        display: inline-block
+        padding: 6px 18px
+        margin: 10px 30px 0px 0px
+        letter-spacing: 2px
+        font-size: $font_base_size * 1.5
+        font-weight: bold
+        border: solid 2px $color_brown
+    & .button_yellow
+        background-color: $color_yellow
+        color: $color_brown
+    & .button_red
+        background-color: $color_red
+        color: $color_white
+        font-weight: 500
+
+.content_white
+    background-color: $color_white
+
+.content_yellow
+    background-color: $background-yellow
+
+.content_brown
+    background-color: $color_brown
+    color: $color_white
+    & .h1_hr
+        border-color: $color_yellow
+    & h1, & h2, & h3
+        font-weight: 500
+    & .color
+        & .color_sample
+            border: solid 1px
+    & .button
+        border: solid 1px $color_white
+        font-weight: 500
+    & .button_yellow
+        background-color: $color_yellow
+        font-weight: bold
+    & .button_red
+        background-color: $color_red
+        color: $color_white
